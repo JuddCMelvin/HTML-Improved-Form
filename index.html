@@ -89,7 +89,7 @@
                         <option value="WY">Wyoming</option>
                     </datalist>
                     <label for="zip">Your Zipcode</label>
-                    <input type="number" id="zip" name="zip">
+                    <input type="text" pattern="[0-9]{5}" title="5-digit US ZIP code" id="zip" name="zip">
                 </div>
             </fieldset>
 
@@ -134,8 +134,15 @@
                     <label for="drinks">All-inclusive Drinks Package</label>
                 </div>
             </fieldset>
-            
-            <input type="submit" value="Enter the Contest!">
+            <div>
+                <input type="password" title="6 Alphanumeric Character Passcode" id="password" name="password" value="Password" pattern="[0-9A-Za-z]{6}" required><span class="required-field">*</span>
+                <label for="password">Your Secret Code (must be 6 alphanumeric characters).</label>
+            </div>
+            <div>
+                 <input type="submit" value="Enter the Contest!">
+                 
+            </div>
+           
         </form>
     </main>
     <footer>
